@@ -27,7 +27,8 @@ Example Output:
 candidate_id
 123
 */
-
+SOLUTION : 
+  
 SELECT candidate_id
 FROM candidates
 WHERE skill IN ('Python', 'Tableau', 'PostgreSQL')
