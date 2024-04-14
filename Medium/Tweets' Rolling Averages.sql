@@ -47,3 +47,20 @@ OVER(PARTITION BY user_id ORDER BY tweet_date
 ROWS BETWEEN 2 PRECEDING AND CURRENT ROW)  AS rolling_avg_3d
 FROM tweets
 ) a ;
+
+
+** Explaination ** 
+
+/*
+The purpose of the ROWS clause is to specify the window frame in relation to the current row. The syntax is:
+
+ROWS BETWEEN lower_bound AND upper_bound
+
+The bounds can be any of these five options:
+
+    UNBOUNDED PRECEDING – All rows before the current row.
+    n PRECEDING – n rows before the current row.
+    CURRENT ROW – Just the current row.
+    n FOLLOWING – n rows after the current row.
+    UNBOUNDED FOLLOWING – All rows after the current row.
+*/
