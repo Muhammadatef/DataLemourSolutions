@@ -64,3 +64,4 @@ The bounds can be any of these five options:
     n FOLLOWING – n rows after the current row.
     UNBOUNDED FOLLOWING – All rows after the current row.
 */
+/* read this article for more info : https://learnsql.com/blog/sql-window-functions-rows-clause/
